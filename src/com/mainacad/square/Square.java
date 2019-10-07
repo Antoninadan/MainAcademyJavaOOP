@@ -1,6 +1,8 @@
 package com.mainacad.square;
 
-public class Square {
+import com.mainacad.abs.AbstractShape;
+
+public class Square extends AbstractShape {
     private double side;
 
     public double getSide() {
@@ -11,6 +13,7 @@ public class Square {
         this.side = side;
     }
 
+    @Override
     public double getArea(){
         return side*side;
     }

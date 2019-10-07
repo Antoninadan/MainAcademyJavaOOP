@@ -1,6 +1,9 @@
 package com.mainacad.triangle;
 
-public class Triangle {
+import com.mainacad.abs.AbstractShape;
+import com.mainacad.abs.Shape;
+
+public class Triangle extends AbstractShape {
     private double sideOne;
     private double sideTwo;
     private double sideThree;
@@ -29,9 +32,10 @@ public class Triangle {
         this.sideThree = sideThree;
     }
 
-    public double getArea(){
+    @Override
+    public double getArea() {
         double p = (sideOne + sideTwo + sideThree) / 2;
 
-        return Math.sqrt(p*(p-sideOne)*(p-sideTwo)* (p-sideThree));
+        return Math.sqrt(p * (p - sideOne) * (p - sideTwo) * (p - sideThree));
     }
 }
