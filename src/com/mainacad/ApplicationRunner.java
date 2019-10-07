@@ -32,7 +32,7 @@ public class ApplicationRunner {
         triangle10.setSideTwo(3.0);
         triangle10.setSideThree(4.0);
         System.out.println(
-                "Triangle with side one " + triangle10.getSideOne()
+                "Triangle  with side one " + triangle10.getSideOne()
                         + ", side two " + triangle10.getSideTwo()
                         + ", side three " + triangle10.getSideThree()
                         + " has area " +
