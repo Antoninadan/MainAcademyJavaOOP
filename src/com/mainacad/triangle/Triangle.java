@@ -32,10 +32,31 @@ public class Triangle extends AbstractShape {
         this.sideThree = sideThree;
     }
 
+    public Triangle(double sideOne, double sideTwo, double sideThree) {
+        this.sideOne = sideOne;
+        this.sideTwo = sideTwo;
+        this.sideThree = sideThree;
+    }
+
+    public Triangle() {
+    }
+
     @Override
     public double getArea() {
         double p = (sideOne + sideTwo + sideThree) / 2;
 
         return Math.sqrt(p * (p - sideOne) * (p - sideTwo) * (p - sideThree));
+    }
+
+//    @Override
+//    public int hashCode() {
+//        return (int)(sideOne + sideTwo + sideThree);  // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+//    }
+
+    public boolean equals (Object obj){
+        Triangle triangle = (Triangle) obj;
+        return triangle.sideOne == this.sideOne
+                && triangle.sideTwo == this.sideTwo
+                && triangle.sideThree == this.sideThree;
     }
 }

@@ -82,6 +82,10 @@ public class ApplicationRunner {
                 + " shape is " + maxShape.getClass().getSimpleName());
 
 
+        Triangle triangleTwo = new Triangle(12, 13, 11);
+        Triangle triangleThree = new Triangle(12, 13, 11);
+        System.out.println(triangleTwo.equals(triangleThree));
+
 
     }
 

@@ -13,6 +13,13 @@ public class Circle extends AbstractShape {
         this.radius = radius;
     }
 
+    public Circle(double radius) {
+        this.radius = radius;
+    }
+
+    public Circle() {
+    }
+
     @Override
     public double getArea(){
         return Math.PI*radius*radius;
